@@ -1,0 +1,62 @@
+$hexagon-width: 20px;
+$hexagon-height: 11.5px;
+
+body {
+  background-color: black;
+  margin-top: 4rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -5px;
+  &:nth-child(even) {
+    margin-left: 20.5px;
+  }
+}
+
+.hexagon {
+  display: inline-block;
+  position: relative;
+  width: $hexagon-width;
+  height: $hexagon-height;
+  color: purple;
+  background-color: currentColor;
+  margin: ($hexagon-height/2) 0.5px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: ($hexagon-width/2) solid transparent;
+    border-right: ($hexagon-width/2) solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: ($hexagon-height/2) solid currentColor;
+  }
+
+  &:after {
+    top: 100%;
+    width: 0;
+    border-top: ($hexagon-height/2) solid currentColor;
+  }
+}
+
+.h-13-3 {
+  color: limegreen;
+}
+
+.h-2-16 {
+  color: yellow;
+}
+
+.h-3-3 {
+  color: red;
+}
+
+.h-12-15 {
+  color: blue;
+}

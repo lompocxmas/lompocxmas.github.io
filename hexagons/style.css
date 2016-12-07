@@ -1,0 +1,46 @@
+body {
+  background-color: #bbb;
+  margin-top: 15rem; }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -5px; }
+  .wrapper:nth-child(even) {
+    margin-left: 20.5px; }
+
+.hexagon {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 11.5px;
+  color: black;
+  background-color: currentColor;
+  margin: 5.75px 0.5px; }
+  .hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 5.75px solid currentColor; }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 5.75px solid currentColor; }
+
+.h-13-3 {
+  color: limegreen; }
+
+.h-2-16 {
+  color: yellow; }
+
+.h-3-3 {
+  color: red; }
+
+.h-12-15 {
+  color: blue; }
+
+/*# sourceMappingURL=style.css.map */

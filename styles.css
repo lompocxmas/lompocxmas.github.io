@@ -1,0 +1,196 @@
+body {
+  background-color: #bbb;
+  margin-top: 4rem;
+  font-family: 'Mountains of Christmas';
+}
+
+h3 {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-family: 'Mountains of Christmas';
+  text-shadow: 0px 0px 8px rgba(255,65,185,1);
+}
+
+#wire {
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: -80px;
+  border-bottom: 3px solid #222;
+  height: 100px;
+}
+
+#wire li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 15px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px 15px;
+  top: 102px;
+  display: inline-block;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: even-flash;
+}
+
+#wire li:nth-child(odd) {
+  animation-name: odd-flash;
+}
+
+#wire li:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  border-radius: 4px;
+  top: -5px;
+  left: 0px;
+  background: #444;
+}
+
+@keyframes even-flash {
+  0%, 100% {
+    background: rgba(255, 230, 65, 1);
+    box-shadow: 0px 2px 20px 4px rgba(255, 233, 65, 1);
+  }
+  50% {
+    background: rgba(255, 233, 65, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255, 233, 65, 0.3);
+  }
+}
+
+@keyframes odd-flash {
+  50% {
+    background: rgba(255, 65, 185, 1);
+    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
+  }
+  0%, 100% {
+    background: rgba(255, 65, 185, 0.5);
+    box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
+  }
+}
+
+h3{
+  color: #fff;
+  text-align: center;
+  font-size: 44px;
+  letter-spacing: 10px;
+}
+#del-countdown{
+  width: 650px;
+  margin: 5% auto;
+}
+
+#clock span{
+  float: left;
+  text-align: center;
+  font-size: 54px;
+  margin: 0 2.5%;
+  color: #fff;
+  padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+#clock span:nth-child(1){
+  background: #fa5559;
+}
+#clock span:nth-child(2){
+  background: #26c2b9;
+}
+#clock span:nth-child(3){
+  background: #f6bc58;
+}
+#clock span:nth-child(4){
+  background: #2dcb74;
+}
+#clock:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#units span{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 8px rgba(255,65,185,1);
+
+}
+span.turn{
+  animation: turn 0.7s ease forwards;
+}
+@keyframes turn{
+  0%{transform: rotateX(0deg)}
+  100%{transform: rotateX(360deg)}
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: rgba(120, 120, 140, 0.7);
+  text-align: center;
+  font-size: 20px;
+}
+#ninja {
+  text-decoration: none;
+  color: #bd0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -5px; }
+  .wrapper:nth-child(even) {
+    margin-left: 20.5px; }
+
+.hexagon {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 11.5px;
+  color: #fff;
+  background-color: currentColor;
+  margin: 5.75px 0.5px; }
+  .hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 5.75px solid currentColor; }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 5.75px solid currentColor;}
+
+.h-13-3 {
+  color: limegreen; }
+
+.h-2-16 {
+  color: yellow; }
+
+.h-3-3 {
+  color: red; }
+
+.h-12-15 {
+  color: blue; }
